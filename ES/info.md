@@ -148,7 +148,7 @@ La recopilación documental, el análisis de información pública, las traducci
 Las personas o entidades que consideren útil este trabajo y deseen contribuir a su continuidad pueden realizar una aportación voluntaria.
 
 **PayPal:** [IceVeritas](https://paypal.me/IceVeritas)  
-**Revolut:** revolut.me/rsjmx (o mediante la etiqueta de pago de Revolut: `@rsjmx`)
+**Revolut:** (https://revolut.me/rsjmx ) (RevTag: `@rsjmx`)
 
 Las contribuciones se destinarán a:
 
