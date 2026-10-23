@@ -31,7 +31,7 @@ Este repositorio reúne documentación, análisis e información pública relaci
 
 ---
 
-## Структура / Estructura / Структура
+## Структура / Estructura /
 
 | Раздел / Sección                         |     Български     |      Español      |      Русский       |
 | :--------------------------------------- | :---------------: | :---------------: | :----------------: |
