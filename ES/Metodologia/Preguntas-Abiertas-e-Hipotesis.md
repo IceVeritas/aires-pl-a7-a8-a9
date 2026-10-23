@@ -125,4 +125,4 @@ Su finalidad es identificar posibles factores explicativos susceptibles de ser i
 
 > **Vinculación con el corpus documental**  
 > Estas hipótesis se contrastarán prioritariamente con las siguientes fuentes documentales: el corpus de reseñas clasificadas A/B, las respuestas públicas de las concesionarias, el contrato de concesión y la documentación normativa accesible, y las comunicaciones institucionales.  
-> Consultar la carpeta [Datos](/Datos/).
+> Consultar la carpeta [Datos](/ES/Datos/).
