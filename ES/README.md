@@ -145,10 +145,10 @@ Pueden resultar especialmente útiles:
 ### Contacto
 
 Correo electrónico:
-[pendiente]
+icedux@icloud.com
 
 WhatsApp:
-[pendiente]
++34 653583521
 
 ---
 
