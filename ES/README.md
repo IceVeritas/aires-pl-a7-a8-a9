@@ -12,7 +12,7 @@ El objetivo del proyecto no es sustituir la labor de las autoridades competentes
 
 ## Alcance del proyecto
 
-A fecha de 21 de octubre de 2026, el corpus documental principal supera las 100 reseñas clasificadas y documentadas, correspondientes a múltiples áreas de servicio de los corredores A7, A8 y A9.
+A fecha de 21 de octubre de 2026, el corpus documental principal es de 137 reseñas clasificadas y documentadas, correspondientes a 41 áreas de servicio de los corredores A7, A8 y A9.
 
 La recopilación y análisis continúan en desarrollo y la documentación se encuentra en constante actualización.
 
