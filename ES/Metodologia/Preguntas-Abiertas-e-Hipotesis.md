@@ -6,15 +6,6 @@
 
 Las siguientes hipótesis constituyen líneas de investigación abiertas. No representan conclusiones, sino posibles explicaciones de las diferencias observadas entre distintos corredores de autopistas franceses.
 
-**Versión: 1.0 · Fecha: 23 de octubre de 2026**
-
----
-
-# Hipótesis de trabajo e indicadores verificables
-
-Las siguientes hipótesis constituyen líneas de investigación abiertas. No representan conclusiones, sino posibles explicaciones de las diferencias observadas entre distintos corredores de autopistas franceses, con especial atención a los corredores A7, A8 y A9.
-
----
 
 ### Hipótesis 1. Diferencias en medidas de seguridad física
 
