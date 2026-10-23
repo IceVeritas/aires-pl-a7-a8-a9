@@ -1,6 +1,20 @@
+**Versión: 1.0 · Fecha: 23 de octubre de 2026**
+
+---
+
 ## Hipótesis de trabajo e indicadores verificables
 
 Las siguientes hipótesis constituyen líneas de investigación abiertas. No representan conclusiones, sino posibles explicaciones de las diferencias observadas entre distintos corredores de autopistas franceses.
+
+**Versión: 1.0 · Fecha: 23 de octubre de 2026**
+
+---
+
+# Hipótesis de trabajo e indicadores verificables
+
+Las siguientes hipótesis constituyen líneas de investigación abiertas. No representan conclusiones, sino posibles explicaciones de las diferencias observadas entre distintos corredores de autopistas franceses, con especial atención a los corredores A7, A8 y A9.
+
+---
 
 ### Hipótesis 1. Diferencias en medidas de seguridad física
 
@@ -12,7 +26,7 @@ Indicadores verificables:
 - Existencia de vallado perimetral.
 - Existencia de control de accesos.
 - Presencia de videovigilancia visible.
-- Existencia de certificación SSTPA.
+- Existencia de certificación SSTPA, verificable mediante listados oficiales públicos o comunicaciones de la administración competente.
 - Número de plazas seguras disponibles.
 - Inversiones en seguridad anunciadas públicamente.
 
@@ -24,7 +38,7 @@ Indicadores verificables:
 
 - Presencia visible de patrullas.
 - Número de referencias a vigilancia en documentación pública.
-- Tiempo medio de respuesta comunicado por usuarios.
+- Respuestas públicas documentadas de las concesionarias a incidentes comunicados por usuarios (sin que consten, en el corpus actual, tiempos medios de respuesta cuantificados).
 - Protocolos de cooperación entre concesionarias y fuerzas de seguridad.
 - Estadísticas oficiales disponibles.
 
@@ -45,10 +59,10 @@ Las diferencias observadas podrían estar relacionadas con distintos niveles de 
 
 Indicadores verificables:
 
-- Número de denuncias registradas.
-- Número de reseñas relacionadas con incidentes.
+- Número de denuncias formales (*plaintes* o *mains courantes*) registradas, cuando existan datos oficiales.
+- Número de reseñas públicas relacionadas con incidentes (distintas de las denuncias formales).
 - Número de comunicaciones a concesionarias.
-- Diferencias entre reseñas públicas y datos institucionales disponibles.
+- Diferencias observadas entre el volumen de reseñas públicas y los datos institucionales disponibles.
 
 ### Hipótesis 5. Barreras lingüísticas y procesales
 
@@ -80,7 +94,7 @@ Las divergencias observadas podrían estar relacionadas con modelos distintos de
 Indicadores verificables:
 
 - Concesionaria responsable.
-- Contratos de concesión.
+- Contrato de concesión ASF (versión consolidada de 15 de enero de 2024) y, en su caso, el de ESCOTA, como fuentes primarias de análisis de obligaciones y facultades.
 - Inversiones anunciadas.
 - Auditorías, inspecciones o informes públicos.
 - Intervenciones de organismos reguladores.
@@ -104,12 +118,20 @@ Indicadores verificables:
 
 - Distancia a aparcamientos privados seguros.
 - Evolución temporal de la oferta de aparcamientos de pago.
-- Certificaciones SSTPA existentes.
+- Existencia de certificación SSTPA o equivalente, verificable mediante listados oficiales públicos o comunicaciones de la administración competente.
 - Inversiones anunciadas en infraestructuras de estacionamiento.
 - Relación geográfica entre incidencias documentadas y oferta de estacionamiento seguro.
+
+---
 
 ## Nota metodológica
 
 La inclusión de estas hipótesis no implica la existencia de pruebas que las confirmen.
 
 Su finalidad es identificar posibles factores explicativos susceptibles de ser investigados mediante documentación pública, respuestas institucionales, estadísticas, contratos de concesión, comunicaciones oficiales y otras fuentes verificables.
+
+---
+
+> **Vinculación con el corpus documental**  
+> Estas hipótesis se contrastarán prioritariamente con las siguientes fuentes documentales: el corpus de reseñas clasificadas A/B, las respuestas públicas de las concesionarias, el contrato de concesión y la documentación normativa accesible, y las comunicaciones institucionales.  
+> Consultar la carpeta [Datos](/Datos/).
