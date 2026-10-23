@@ -1,5 +1,4 @@
 # aires-pl-a7-a8-a9
-# aires-pl-a7-a8-a9
 
 [Български](./BG) | [Español](./ES) | [Русский](./RU)
 
