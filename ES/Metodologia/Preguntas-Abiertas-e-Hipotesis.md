@@ -4,7 +4,7 @@
 
 ## Hipótesis de trabajo e indicadores verificables
 
-Las siguientes hipótesis constituyen líneas de investigación abiertas. No representan conclusiones, sino posibles explicaciones de las diferencias observadas entre distintos corredores de autopistas, con especial atención a los corredores A7, A8 y A9.
+Las siguientes hipótesis constituyen líneas de investigación abiertas. No representan conclusiones, sino posibles explicaciones de las diferencias observadas entre distintos corredores de autopistas franceses , con especial atención a los corredores A7, A8 y A9.
 
 
 ### Hipótesis 1. Diferencias en medidas de seguridad física
