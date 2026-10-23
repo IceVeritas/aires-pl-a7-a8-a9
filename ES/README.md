@@ -169,3 +169,9 @@ La presente documentación tiene carácter informativo y divulgativo.
 No constituye asesoramiento jurídico individualizado.
 
 Su finalidad es facilitar el conocimiento de los derechos de los conductores profesionales, promover la transparencia documental y contribuir al análisis de los problemas de seguridad comunicados públicamente por los usuarios.
+
+## Licencia 
+
+El contenido de este repositorio se publica con fines informativos y de documentación.
+
+Se recomienda el uso de una licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) o equivalente, salvo indicación contraria en documentos concretos.
