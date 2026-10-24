@@ -33,9 +33,8 @@ Este repositorio reúne documentación, análisis e información pública relaci
 
 | Раздел / Sección | Български | Español | Русский |
 | :--- | :---: | :---: | :---: |
-| **Datos / Данни / Данные** | [BG](./BG/Datos) | [ES](./ES/Datos) | [RU](./RU/Datos) |
-| **Legal / Правна рамка / Правовая база** | [BG](./BG/Legal) | [ES](./ES/Legal) | [RU](./RU/Legal) |
-| **Correspondencia / Кореспонденция** | [BG](./BG/Correspondencia) | [ES](./ES/Correspondencia) | [RU](./RU/Correspondencia) |
+| **Datos / Данни / Данные** | [BG](./BG/Danni) | [ES](./ES/Datos) | [RU](./RU/Dannye) |
+| **Legal / Правна рамка / Правовая база** | [BG](./BG/Pravo) | [ES](./ES/Legal) | [RU](./RU/Pravo) |
 | **Metodología / Методология** | [BG](./BG/Metodologia) | [ES](./ES/Metodologia) | [RU](./RU/Metodologia) |
 
 ---
