@@ -1,303 +1,219 @@
 <!DOCTYPE html>
 <html lang="bg">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Документална обсерватория за сигурността на професионалните водачи във Франция</title>
-        <style>
-        :root {
-            --primary-color: #0d1117;
-            --secondary-color: #161b22;
-            --border-color: #30363d;
-            --text-color: #c9d1d9;
-            --heading-color: #f0f6fc;
-            --accent-color: #58a6ff;
-            --accent-hover: #1f6feb;
-            --table-header-bg: #161b22;
-            --table-row-alt: #161b22;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--primary-color);
-            margin: 0;
-            padding: 2rem 1rem;
-        }
-
-        .container {
-            max-width: 890px;
-            margin: 0 auto;
-            background-color: var(--primary-color);
-            padding: 2rem;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-        }
-
-        h1 {
-            color: var(--heading-color);
-            font-size: 1.8rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.5rem;
-            margin-top: 0;
-        }
-
-        h2 {
-            color: var(--heading-color);
-            font-size: 1.4rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.3rem;
-            margin-top: 1.8rem;
-        }
-
-        h3 {
-            color: var(--heading-color);
-            font-size: 1.15rem;
-            margin-top: 1.4rem;
-        }
-
-        p, ul, ol {
-            margin-bottom: 1rem;
-        }
-
-        ul, ol {
-            padding-left: 2rem;
-        }
-
-        li {
-            margin-bottom: 0.3rem;
-        }
-
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .language-switcher {
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .language-switcher a {
-            font-weight: 600;
-        }
-
-        .lang-section {
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background-color: var(--secondary-color);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-        }
-
-        .lang-section h3 {
-            margin-top: 0;
-            font-size: 1.1rem;
-        }
-
-        .btn-link {
-            display: inline-block;
-            margin-top: 0.5rem;
-            font-weight: 600;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-            font-size: 0.95rem;
-        }
-
-        th, td {
-            padding: 0.6rem 0.8rem;
-            text-align: left;
-            border: 1px solid var(--border-color);
-        }
-
-        th {
-            background-color: var(--table-header-bg);
-            color: var(--heading-color);
-            font-weight: 600;
-        }
-
-        tr:nth-child(even) {
-            background-color: rgba(110, 118, 129, 0.04);
-        }
-
-        hr {
-            height: 0.25em;
-            padding: 0;
-            margin: 1.5rem 0;
-            background-color: var(--border-color);
-            border: 0;
-        }
-
-        strong {
-            color: var(--heading-color);
-        }
-
-        .contact-info {
-            background-color: var(--secondary-color);
-            padding: 1rem;
-            border-radius: 6px;
-            border: 1px solid var(--border-color);
-            margin: 1rem 0;
-        }
-
-        .contact-info p {
-            margin: 0.3rem 0;
-            font-family: monospace;
-            font-size: 0.95rem;
-        }
-    </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IceVeritas | Независимо обследване, документиране и анализ на сигурността във Франция</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>body { background-color: #f8f9fa; font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; } .hero-header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: #fff; } .card-project { transition: transform 0.2s, shadow 0.2s; border: none; } .card-project:hover { transform: translateY(-3px); box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15)!important; } .badge-status { font-size: 0.75rem; letter-spacing: 0.5px; } .lang-btn { text-decoration: none !important; color: rgba(255, 255, 255, 0.6); transition: color 0.2s; } .lang-btn:hover, .lang-btn.active { color: #ffffff !important; } h1, h2, h3, .lead { letter-spacing: -0.01em; }</style>
     </head>
-    <body>
-        <div class="container">
-            <h1>Документална обсерватория за сигурността на професионалните водачи във Франция</h1>
-            <h3>Средиземноморски коридор (A9 · A7 · A8)</h3>
-            <div class="language-switcher">
-                <a href="./BG">Български</a> | <a href="./ES">Español</a> | <a href="./RU">Русский</a>
+    <body class="bg-opacity-25 bg-white">
+        <!-- HERO / HEADER PRINCIPAL -->
+        <header class="hero-header py-5 mb-5 border-bottom border-primary border-4">
+            <div class="container">
+                <!-- Selector de Idioma Horizontal -->
+                <nav class="lang-selector-bar mb-3" aria-label="Selector de idioma">
+                    <a href="./BG/" class="lang-btn active" title="Български"> <span class="lang-name font-monospace fw-bold">BG</span> </a>
+                    <span class="lang-divider text-white-50 mx-1">|</span>
+                    <a href="./ES/" class="lang-btn" title="Español"> <span class="lang-name font-monospace text-white-50">ES</span> </a>
+                    <span class="lang-divider text-white-50 mx-1">|</span>
+                    <a href="./RU/" class="lang-btn" title="Русский"> <span class="lang-name font-monospace text-white-50">RU</span> </a>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-10">
+                        <span class="badge bg-primary font-monospace mb-3 text-uppercase">IceVeritas Research Portal</span>
+                        <h1 class="display-6 mb-2 text-uppercase">НЕЗАВИСИМО ОБСЛЕДВАНЕ, ДОКУМЕНТИРАНЕ И АНАЛИЗ НА СИГУРНОСТТА ВЪВ ФРАНЦИЯ</h1>
+                        <p class="lead text-light mb-0 text-uppercase">Средиземноморски коридор (A9 &middot; A7 &middot; A8) &#8212; OSINT анализ, правни гаранции и институционален одит</p>
+                    </div>
+                </div>
             </div>
-            <div class="lang-section">
-                <h3>Български</h3>
-                <p>Това хранилище съдържа документация, анализи и публично достъпна информация, свързана със сигурността на професионалните водачи в зони за отдих и паркинги по автомагистралите A7, A8 и A9 във Франция[cite: 1].</p>
-                <a href="./BG" class="btn-link">➡️ Пълна документация на български език: BG</a>
+        </header>
+        <main class="bg-white container mb-5 shadow">
+            <!-- ВЪВЕДЕНИЕ И КОНТЕКСТ -->
+            <section class="mb-5">
+                <h2 class="border-bottom fw-bold h4 mb-3 p-4 pb-2 text-center text-dark text-uppercase">Реалността по A9, A8 и A7 и цел на настоящото обследване</h2>
+                <p class="text-secondary">
+                    Публично достъпни свидетелства на международни водачи описват различни посегателства по транспортните коридори &#8212; от кражби на дизелово гориво от резервоарите и хладилните агрегати, през срязване на брезенти и посегателства върху товара, до нощни прониквания в кабините, докато водачите почиват. Тези сведения очертават проблем, който не следва да се разглежда единствено през отделните инциденти.</p>
+                <p class="text-secondary"> <strong>Рисковете за сигурността не се изчерпват с отделните престъпни посегателства.</strong> Инфраструктурните и организационните условия, при които възникват и се повтарят подобни инциденти, поставят по-широки въпроси относно превенцията, разпределението на отговорностите и ефективността на съществуващите механизми за контрол. Недостатъчното осветление, липсата на периметрова защита, неизправното видеонаблюдение и отсъствието на физическа охрана са фактори, които заслужават самостоятелно и систематично изследване.</p>
+                <p class="text-secondary"> <strong>ICEVERITAS разглежда тези явления отвъд рамките на отделния инцидент.</strong> Подходът се основава на независимо обследване, систематично документиране и аналитично съпоставяне на публично достъпна информация (OSINT), документални източници, нормативни изисквания и институционални действия.</p>
+                <p class="text-secondary">
+                    Не всяка възможна хипотеза може да бъде представена като установен факт. Поради това анализът разграничава доказаните обстоятелства, установените закономерности и въпросите, които остават открити и изискват допълнителна проверка.</p>
+                <p class="text-secondary">
+                    Когато документалните основания го позволяват, резултатите могат да бъдат представени пред компетентните национални и европейски институции, включително ART и DGITM, с цел проверка и предприемане на действия в рамките на техните правомощия.</p>
+                <div class="p-3 bg-white border-start border-4 border-primary rounded shadow-sm my-4 font-monospace small">
+                    <p class="mb-1 text-dark"><strong>Основни стълбове за действие:</strong></p>
+                    <ul class="mb-0 text-secondary">
+                        <li>
+                            <strong>Борба със "скритата престъпност":</strong> Регистриране на всеки инцидент за премахване на фалшивата статистика за "сигурни зони".
+                        </li>
+                        <li>
+                            <strong>Правни гаранции:</strong> Задължително приемане на жалби (чл. 15-3 от Наказателно-процесуалния кодекс на Франция) и право на преводач (Директива 2010/64/ЕС).
+                        </li>
+                        <li>
+                            <strong>Договорна отговорност:</strong> Изискване за спазване на чл. 19 от Pliego de Condiciones от страна на концесионерите (ASF / ESCOTA - VINCI Autoroutes).
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- СТАТИСТИЧЕСКИ ДАННИ (ОБНОВЕНИ) -->
+            <section class="mb-5">
+                <!-- СТАТИСТИЧЕСКИ ДАННИ С ПЪЛНО ВЪВЕДЕНИЕ -->
+                <section class="mb-5">
+                    <h2 class="h4 fw-bold text-dark border-bottom pb-2 mb-3">Статистически данни от публичния корпус</h2>
+                    <!-- Текстът като разширение/въведение -->
+                    <p class="text-secondary">
+        Въз основа на систематизиран одит и анализ на <strong>136 публични отзива</strong> от международни водачи в Средиземноморския коридор (A7, A8 и A9 във Франция), събраният документален корпус очертава следните основни индикатори: </p>
+                    <!-- Четири основни показателя (Блокове) -->
+                    <div class="row g-3 font-monospace text-center mb-4">
+                        <div class="col-md-3">
+                            <div class="p-3 bg-white border rounded shadow-sm">
+                                <span class="display-6 fw-bold text-primary d-block">50.4%</span>
+                                <span class="small text-muted">Проникване в кабина / разбита брава (69 сигнала)</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 bg-white border rounded shadow-sm">
+                                <span class="display-6 fw-bold text-danger d-block">47.4%</span>
+                                <span class="small text-muted">Кражба на гориво / дизел (65 сигнала)</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 bg-white border rounded shadow-sm">
+                                <span class="display-6 fw-bold text-warning d-block">12.4%</span>
+                                <span class="small text-muted">Срязан брезент / товар (17 сигнала)</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3 bg-white border rounded shadow-sm">
+                                <span class="display-6 fw-bold text-secondary d-block">87.6%</span>
+                                <span class="small text-muted">Пряко свидетелство от потърпевш (Категория A)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Индикатор за намеса на полицията / жандармерията -->
+                    <div class="p-4 bg-white border rounded shadow-sm font-monospace">
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center mb-3 mb-md-0">
+                                <span class="display-5 fw-bold text-dark d-block">19.7%</span>
+                                <span class="badge bg-secondary text-uppercase">27 сигнала от 136</span>
+                            </div>
+                            <div class="col-md-9 border-start-md ps-md-4">
+                                <p class="small text-secondary mb-2"> <strong>Присъствие и реакция на органите на реда (Полиция / Жандармерия):</strong><br>
+                    В <strong>27 от отзивите (19.7%)</strong> шофьорите правят изрично позоваване на френските сили за сигурност. </p>
+                                <ul class="small text-muted mb-0">
+                                    <li>
+                                        <strong>Контекст:</strong> Подадени жалби, повиквания на тел. 17/112, закъсняла реакция или препоръки от самите полицаи <span class="fw-bold">водачите да напуснат ареа поради липса на сигурност.</span>
+                                    </li>
+                                    <li>
+                                        <strong>Скрита престъпност:</strong> Липсата на официално регистриране при останалите над 80% от инцидентите изкривява официалната статистика пред надзорните органи (DGITM/ART).
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+            Документална база данни </h5>
+                                    <p class="card-text">
+            Публично достъпни структурирани данни, използвани при анализа и документирането на сигурността на професионалните водачи. </p>
+                                    <a href="/BG/Danni/Incidenti.xlsx" class="btn btn-success">
+            Изтегляне на данните (.xlsx) </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- СТРУКТУРА НА ДОКУМЕНТАЦИЯТА -->
+            <section class="border card mb-5 p-4 rounded shadow">
+                <h2 class="border-bottom fw-bold h4 mb-3 pb-2 text-center text-dark">Структура на репозиториума</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered align-middle font-monospace small">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Раздел / Sección</th>
+                                <th class="text-center">Български</th>
+                                <th class="text-center">Español</th>
+                                <th class="text-center">Русский</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Datos / Данни / Данные</strong></td>
+                                <td class="text-center"><a href="./Datos/" class="btn btn-sm btn-outline-primary fw-bold">BG</a></td>
+                                <td class="text-center"><a href="./ES/Datos/" class="btn btn-sm btn-outline-secondary">ES</a></td>
+                                <td class="text-center"><a href="./RU/Datos/" class="btn btn-sm btn-outline-secondary">RU</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Legal / Правна рамка / Правовая база</strong></td>
+                                <td class="text-center"><a href="./Legal/" class="btn btn-sm btn-outline-primary fw-bold">BG</a></td>
+                                <td class="text-center"><a href="./ES/Legal/" class="btn btn-sm btn-outline-secondary">ES</a></td>
+                                <td class="text-center"><a href="./RU/Legal/" class="btn btn-sm btn-outline-secondary">RU</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Correspondencia / Кореспонденция</strong></td>
+                                <td class="text-center"><a href="./Correspondencia/" class="btn btn-sm btn-outline-primary fw-bold">BG</a></td>
+                                <td class="text-center"><a href="./ES/Correspondencia/" class="btn btn-sm btn-outline-secondary">ES</a></td>
+                                <td class="text-center"><a href="./RU/Correspondencia/" class="btn btn-sm btn-outline-secondary">RU</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Metodología / Методология</strong></td>
+                                <td class="text-center"><a href="./Metodologia/" class="btn btn-sm btn-outline-primary fw-bold">BG</a></td>
+                                <td class="text-center"><a href="./ES/Metodologia/" class="btn btn-sm btn-outline-secondary">ES</a></td>
+                                <td class="text-center"><a href="./RU/Metodologia/" class="btn btn-sm btn-outline-secondary">RU</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- КОНТАКТИ И ПОДКРЕПА -->
+            <section class="g-4 mb-5 row">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm p-4 border-0 bg-white">
+                        <h3 class="h5 fw-bold text-dark mb-3">Компетентни институции</h3>
+                        <ul class="list-unstyled small text-secondary font-monospace">
+                            <li class="mb-3">
+                                <strong class="text-dark">ART:</strong> Орган за регулиране на транспорта (Autorité de régulation des transports)
+                                <div class="ms-3 mt-1 text-muted">
+                                    <div>Уебсайт: <a href="https://www.autorite-transports.fr" target="_blank" class="text-primary text-decoration-none">autorite-transports.fr</a>
+                                    </div>
+                                    <div>Имейл: <a href="mailto:contact@autorite-transports.fr" class="text-primary text-decoration-none">contact@autorite-transports.fr</a>
+                                    </div>
+                                    <div>Адрес: 300 terrasse de l&apos;Arche, 92000 Nanterre, Франция</div>
+                                    <div>Телефон: +33 (0)1 58 01 01 10</div>
+                                </div>
+                            </li>
+                            <li class="mb-2">
+                                <strong class="text-dark">DGITM:</strong> Генерална дирекция "Инфраструктура, транспорт и мобилност" (Direction générale des infrastructures, des transports et des mobilités)
+                                <div class="ms-3 mt-1 text-muted">
+                                    <div>Уебсайт: <a href="https://www.ecologie.gouv.fr/dgitm" target="_blank" class="text-primary text-decoration-none">ecologie.gouv.fr/dgitm</a>
+                                    </div>
+                                    <div>Имейл: <a href="mailto:dgitm@developpement-durable.gouv.fr" class="text-primary text-decoration-none">dgitm@developpement-durable.gouv.fr</a>
+                                    </div>
+                                    <div>Адрес: Tour Séquoia, 92055 La Défense Cedex, Франция</div>
+                                    <div>Телефон: +33 (0)1 40 81 21 22</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white border-0 card h-100 p-4 shadow-sm">
+                        <h3 class="h5 fw-bold text-dark mb-3">Контакт и сътрудничество</h3>
+                        <p class="small text-muted font-monospace mb-1">Email: <a href="mailto:icedux@icloud.com"><span>icedux@icloud.com</span></a></p>
+                        <p class="small text-muted font-monospace mb-0">WhatsApp: +34 653583521</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER INSTITUCIONAL -->
+        <footer class="bg-dark text-white-50 py-4 mt-auto border-top border-secondary">
+            <div class="container text-center font-monospace small">
+                <p class="mb-1">IceVeritas Research &amp; OSINT Documentation Portal | Open-Access Repository</p>
+                <p class="mb-0"><a href="https://github.com/" class="text-light text-decoration-none" target="_blank">GitHub Repository</a> &middot; ISO/IEC 27037 Compliant Dossiers</p>
             </div>
-            <div class="lang-section">
-                <h3>Español</h3>
-                <p>Este repositorio reúne documentación, análisis e información pública relacionada con la seguridad de los conductores profesionales en áreas de servicio y aparcamientos de vehículos pesados en los corredores A7, A8 y A9 en Francia[cite: 1].</p>
-                <a href="./ES" class="btn-link">➡️ Documentación completa en español: ES</a>
-            </div>
-            <div class="lang-section">
-                <h3>Русский</h3>
-                <p>Данный репозиторий содержит документацию, анализ и общедоступную информацию, связанную с безопасностью профессиональных водителей на зонах отдыха и стоянках грузового транспорта вдоль автомагистралей A7, A8 и A9 во Франции[cite: 1].</p>
-                <a href="./RU" class="btn-link">➡️ Полная документация на русском языке: RU</a>
-            </div>
-            <h2>Въведение</h2>
-            <p>Този проект е посветен на документирането на проблеми, свързани със сигурността на професионалните водачи в паркинги и зони за отдих по автомагистралите A7, A8 и A9 във Франция[cite: 1].</p>
-            <p>Чрез анализ на публични отзиви, статистически данни, официална кореспонденция и нормативни източници проектът изгражда документална база за проследяване на инциденти, свързани с кражби, вандализъм и други рискове, засягащи водачите по време на задължителните им почивки[cite: 1].</p>
-            <p>Освен самите инциденти, проектът документира и реакциите на концесионерите, надзорните органи и компетентните институции, както и развитието на предприетите мерки във времето[cite: 1].</p>
-            <p>Основният принцип е прост:</p>
-            <p><strong>Това, което е документирано, може да бъде анализирано. Това, което е анализирано, може да бъде поставено пред компетентните институции[cite: 1].</strong></p>
-            <p>Проектът не е насочен към разпространяване на отделни инциденти в социалните мрежи, а към създаването на проверима и проследима документална база, основана на публично достъпна информация[cite: 1].</p>
-            <h2>Структура / Estructura / Структура</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Раздел / Sección</th>
-                        <th style="text-align: center;">Български</th>
-                        <th style="text-align: center;">Español</th>
-                        <th style="text-align: center;">Русский</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Datos / Данни / Данные</strong></td>
-                        <td style="text-align: center;"><a href="./BG/Datos">BG</a></td>
-                        <td style="text-align: center;"><a href="/ES/Datos">ES</a></td>
-                        <td style="text-align: center;"><a href="./RU/Datos">RU</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Legal / Правна рамка / Правовая база</strong></td>
-                        <td style="text-align: center;"><a href="./BG/Legal">BG</a></td>
-                        <td style="text-align: center;"><a href="./ES/Legal">ES</a></td>
-                        <td style="text-align: center;"><a href="./RU/Legal">RU</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Correspondencia / Кореспонденция</strong></td>
-                        <td style="text-align: center;"><a href="./BG/Correspondencia">BG</a></td>
-                        <td style="text-align: center;"><a href="./ES/Correspondencia">ES</a></td>
-                        <td style="text-align: center;"><a href="./RU/Correspondencia">RU</a></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Metodología / Методология</strong></td>
-                        <td style="text-align: center;"><a href="./BG/Metodologia">BG</a></td>
-                        <td style="text-align: center;"><a href="./ES/Metodologia">ES</a></td>
-                        <td style="text-align: center;"><a href="./RU/Metodologia">RU</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2>Съдържание</h2>
-            <h3>Данни</h3>
-            <p>Документация и анализи за отделни зони за отдих и паркинги по автомагистралите A7, A8 и A9[cite: 1]:</p>
-            <ul>
-                <li>Документирани отзиви[cite: 1].</li>
-                <li>Статистически анализи[cite: 1].</li>
-                <li>Наблюдения и доклади[cite: 1].</li>
-                <li>PDF и Excel файлове[cite: 1].</li>
-            </ul>
-            <h3>Методология</h3>
-            <p>Описание на[cite: 1]:</p>
-            <ul>
-                <li>Критериите за класификация[cite: 1].</li>
-                <li>Използваните източници[cite: 1].</li>
-                <li>Ограниченията на анализа[cite: 1].</li>
-                <li>Методологичните бележки[cite: 1].</li>
-            </ul>
-            <h3>Кореспонденция</h3>
-            <p>Кореспонденция и документи, свързани с[cite: 1]:</p>
-            <ul>
-                <li>Концесионерите на автомагистралите[cite: 1].</li>
-                <li>Националните надзорни органи[cite: 1].</li>
-                <li>Регулаторните институции[cite: 1].</li>
-                <li>Институциите на Европейския съюз[cite: 1].</li>
-            </ul>
-            <h3>Правна рамка</h3>
-            <p>Нормативни документи и правни източници, свързани с[cite: 1]:</p>
-            <ul>
-                <li>Правата на жертвите на престъпления[cite: 1].</li>
-                <li>Правото на подаване на жалба[cite: 1].</li>
-                <li>Правото на преводач[cite: 1].</li>
-                <li>Сигурността на професионалните водачи[cite: 1].</li>
-                <li>Безопасните паркинги за тежкотоварни превозни средства (SSTPA)[cite: 1].</li>
-            </ul>
-            <h2>Компетентни институции</h2>
-            <p>Сред институциите, свързани с разглежданите въпроси, са[cite: 1]:</p>
-            <h3>ART</h3>
-            <p><strong>Autorité de régulation des transports</strong>[cite: 1]</p>
-            <p>Независим регулаторен орган, упражняващ надзор върху различни аспекти на транспортната инфраструктура и концесиите във Франция[cite: 1].</p>
-            <h3>DGITM</h3>
-            <p><strong>Direction générale des infrastructures, des transports et des mobilités</strong>[cite: 1]</p>
-            <p>Френска държавна администрация, отговаряща за инфраструктурата, транспорта и мобилността[cite: 1].</p>
-            <p>С напредването на проекта ще бъдат публикувани документи и кореспонденция, свързани с дейността на тези и други компетентни институции[cite: 1].</p>
-            <h2>Методологична бележка</h2>
-            <p>Използваните отзиви произхождат от публично достъпни източници и са били налични към момента на събирането им[cite: 1].</p>
-            <p>Проектът не разглежда отделните публикации като окончателно доказателство за конкретни събития, а като публични свидетелства, които могат да бъдат документирани, класифицирани и анализирани[cite: 1].</p>
-            <p>Изводите се основават на съвкупността от наличните документи, отзиви, официални отговори и други публични източници[cite: 1].</p>
-            <h2>Сътрудничество</h2>
-            <p>Добре дошли са[cite: 1]:</p>
-            <ul>
-                <li>Документирани свидетелства[cite: 1].</li>
-                <li>Снимки и документи[cite: 1].</li>
-                <li>Институционална кореспонденция[cite: 1].</li>
-                <li>Правна и техническа информация[cite: 1].</li>
-                <li>Изследвания, свързани със сигурността на транспорта[cite: 1].</li>
-            </ul>
-            <p>При възможност информацията следва да бъде придружена от проверими източници[cite: 1].</p>
-            <h2>Контакт</h2>
-            <p>За предложения, корекции и предоставяне на информация могат да бъдат използвани следните средства за контакт[cite: 1]:</p>
-            <div class="contact-info">
-                <p><strong>Correo electrónico:</strong> icedux@icloud.com[cite: 1]</p>
-                <p><strong>WhatsApp:</strong> +34 653583521[cite: 1]</p>
-            </div>
-            <h2>Подкрепа на проекта</h2>
-            <p>Поддържането на документацията, преводите, анализите и институционалното проследяване изисква време и ресурси[cite: 1].</p>
-            <p>Лица или организации, желаещи да подкрепят развитието на проекта, могат да направят доброволно дарение чрез посочените в проекта механизми[cite: 1].</p>
-            <p>Всички дарения са доброволни и не влияят върху независимостта на проекта[cite: 1].</p>
-            <h2>Notice / Aviso / Уведомление</h2>
-            <h3>Български</h3>
-            <p>Публикуваната документация има информационен и документален характер[cite: 1]. Основната ѝ цел е да улесни анализа, съхранението и последващото проследяване на информация, свързана със сигурността на професионалните водачи по френските автомагистрали[cite: 1].</p>
-            <h3>Español</h3>
-            <p>La documentación publicada tiene carácter informativo y documental[cite: 1]. Su finalidad es facilitar el análisis, la conservación y el seguimiento de información relacionada con la seguridad de los conductores profesionales en las autopistas francesas[cite: 1].</p>
-            <h3>Русский</h3>
-            <p>Опубликованная документация носит исключительно информационный и справочный характер[cite: 1]. Ее цель — содействовать анализу, сохранности и отслеживанию информации, касающейся безопасности профессиональных водителей на автомагистралях Франции[cite: 1].</p>
-        </div>
+        </footer>
     </body>
 </html>
