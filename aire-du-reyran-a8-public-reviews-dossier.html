@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Documentación y análisis de reseñas públicas relacionadas con la seguridad, los robos y las condiciones de estacionamiento en el área de servicio Aire du Reyran, autopista A8, Francia. Incluye referencias, observaciones y elementos de trazabilidad documental.">
+        <meta name="author" content="IceDux.art">
+        <title>Aire du Reyran (A8) - Francia | Análisis de reseñas públicas y seguridad</title>
+        <!-- Bootstrap core CSS -->
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="../../Pinegrow/bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- ENCABEZADO INSTITUCIONAL DE AUDITORÍA -->
+        <header class="bg-dark text-white py-4 mb-4 border-bottom border-primary border-4">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <div>
+                        <h1 class="h2 mb-1 font-monospace">AUDIT DOSSIER | AIRE DU REYRAN (A8)</h1>
+                        <p class="lead mb-0 text-light small">Observatoire Documentaire sur la Sécurité des Conducteurs Routiers (PL)</p>
+                    </div>
+                    <div class="text-end font-monospace small mt-2 mt-md-0">
+                        <div>
+                            <span class="badge bg-primary">ISO/IEC 27037 Compliant</span>
+                        </div>
+                        <div>
+                            <strong>Réf:</strong> AUD-A8-REYRAN-2026
+                        </div>
+                        <div>
+                            <strong>Opérateur:</strong> VINCI Autoroutes (Escota)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container mb-4">
+            <!-- RESUMEN EJECUTIVO (EXECUTIVE SUMMARY) -->
+            <section class="card shadow-sm border-0 mb-4">
+                <div class="card-header bg-primary text-white font-monospace">
+                    <h2 class="h5 mb-0"><i class="bi bi-file-earmark-bar-graph"></i> 1. RESUME EXÉCUTIF / EXECUTIVE SUMMARY</h2>
+                </div>
+                <div class="card-body bg-light">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="card-text text-dark"> <strong>[FR]</strong> Ce dossier réunit l'ensemble des preuves numériques collectées concernant les incidents de sécurité survenus sur l'aire de repos PL <em>Aire du Reyran (Autoroute A8)</em>. L'analyse met en évidence des récurrences de vols de carburant (gasoil) et de dégradations de bâches de remorques, ainsi qu'une réponse institutionnelle automatisée et stéréotypée de l'exploitant autoroutier (VINCI Autoroutes). </p>
+                            <p class="card-text text-dark"> <strong>[EN]</strong> This dossier consolidates digital forensic evidence regarding security incidents recorded at the <em>Aire du Reyran (A8 Highway)</em> heavy goods vehicle (HGV) rest area. Analysis demonstrates persistent fuel theft and trailer canvas slashing, coupled with automated, template-based official responses from the concession holder (VINCI Autoroutes). </p>
+                        </div>
+                        <div class="col-md-4 border-start border-2 border-primary">
+                            <div class="font-monospace small">
+                                <div class="mb-2">
+                                    <strong>Total Échantillons / Samples:</strong> 33 Unités
+                                </div>
+                                <div class="mb-2">
+                                    <strong>Période / Period:</strong> 2025 - 2026
+                                </div>
+                                <div class="mb-2">
+                                    <strong>Typologie:</strong> Vol Fret & Carburant / Freight & Fuel Theft
+                                </div>
+                                <div>
+                                    <strong>Réponse Exploitant:</strong> 100% Modèle Générique / Bot Pattern
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- METODOLOGÍA Y CADENA DE CUSTODIA (METHODOLOGY & CHAIN OF CUSTODY) -->
+            <section class="card shadow-sm border-0 mb-4">
+                <div class="card-header bg-secondary text-white font-monospace">
+                    <h2 class="h5 mb-0">2. MÉTHODOLOGIE FORENSIQUE & CHAÎNE DE GARDE / FORENSIC METHODOLOGY</h2>
+                </div>
+                <div class="card-body bg-white">
+                    <div class="row small">
+                        <div class="col-md-4">
+                            <h6 class="fw-bold text-dark border-bottom pb-1">1. Capture & Extraction</h6>
+                            <p class="text-muted">
+                        Chaque élément de preuve est extrait à partir des sources ouvertes (OSINT - Google Maps API/DOM) et conservé sous forme de capture d'écran PNG haute résolution accompagnée d'un extrait textuel brut UTF-8. </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="fw-bold text-dark border-bottom pb-1">2. Empreinte Cryptographique</h6>
+                            <p class="text-muted">
+                        Afin de garantir l'immuabilité et la non-répudiation de la preuve, chaque fichier image (.png) et rapport textuel (.txt) fait l'objet d'un calcul d'empreinte numérique <strong>SHA-256</strong> dès son extraction. </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="fw-bold text-dark border-bottom pb-1">3. Horodatage UTC</h6>
+                            <p class="text-muted">
+                        L'horodatage des fichiers est normalisé en temps universel coordonné (UTC ISO 8601), directement extrait des propriétés du système de fichiers source pour le contrôle d'intégrité temporelle. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2" data-field="data-field=" status-id">AUD-A8-REYRAN-0001</span>
+                        <strong class="text-dark" data-field="autor">Upa Gomes</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Spanish</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 7 meses</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="card-text bg-white p-3 border rounded text-dark" data-field="Respondido por">
+            Me robaron unos 500 litros de gasoil en esta área. Llegué a las 21 h y por la mañana me encontré el tapón del gasoil en el suelo. </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="card-text bg-light p-3 border-start border-3 border-warning rounded mt-2" data-field="texto-respuesta">
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1">Bonjour,
+Merci pour votre message. Votre sécurité est au cœur de nos priorités, et nous condamnons fermement ce type de comportement. Nos équipes restent mobilisées aux côtés des forces de l&rsquo;ordre pour garantir un environnement sûr. Nous leur avons donc transmis votre signalement. Nous vous encourageons à signaler vous aussi tout comportement suspect aux forces de l&apos;ordre en composant le 112.
+Nous espérons que vos prochains trajets se passeront dans les meilleures conditions.
+Solène, service client VINCI Autoroutes</small>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/hMnNqnjvhyyvhZ4r7" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">REYRAN-0001</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN_0001</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0002</span>
+                        <strong class="text-dark" data-field="autor">jogras mj</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">English</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 7 meses</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="card-text bg-white p-3 border rounded text-dark" data-field="texto-resena">Normal Truck parking.  But unfortunately last night stolen my Diesel &#128557;&#128557; </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="card-text bg-light p-3 border-start border-3 border-warning rounded mt-2" data-field="texto-respuesta">Bonjour,
+                        Nous vous remercions pour votre commentaire. Votre sécurité sur nos aires est une priorité c&apos;est pourquoi nous condamnons fermement ces agissements. Nos équipes travaillent en lien étroit avec les forces de l&rsquo;ordre pour y remédier. Nous vous invitons à les alerter en composant le 112. Nous espérons que vos futurs trajets se dérouleront sans désagrément.
+                        Solène, service client VINCI Autoroutes
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/hMnNqnjvhyyvhZ4r7" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0002</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0002</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0003</span>
+                        <strong class="text-dark" data-field="autor">Abdou Toure</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Spanish</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 mes</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Hay que tener cuidado, se roba mucho gasoil. Anoche me han robado gasoil. </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">Bonjour,
+                        Nous vous remercions pour votre signalement. Nous prenons très au sérieux les incidents pouvant affecter la sécurité de nos clients et collaborons activement avec les forces de l&rsquo;ordre pour assurer la tranquillité sur nos aires.
+                        Nous vous encourageons à signaler immédiatement tout comportement suspect aux forces de l&apos;ordre en composant le 112.Nous espérons vous offrir une meilleure expérience prochainement.
+                        Solène, service client VINCI Autoroutes
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/hdFNuhmZPwbTtkwv9" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0003</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:::</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0003</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0004" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0004</span>
+                        <strong class="text-dark" data-field="autor">Linx Linx</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Spanish</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 7 meses</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Esta noche 28/enero/2026. Hemos encontrado nuestros bolsos fuera de la cabina y la ventana abierta. Nosotros dormidos dentro, no hemos sentido nada. El ladrón buscaba dinero, no cogió nada, ni tarjetas, ni GPS, ni nada. Así que no es cero fiable el área. </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">Bonjour,
+                        Merci pour votre retour. Nous déplorons les comportements inappropriés que vous avez pu observer et travaillons en étroite collaboration avec les autorités pour y remédier.
+                        Nous espérons que vos futures pauses seront sereines.
+                        Solène, service client VINCI Autoroutes
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/jNJxiysfsga4G2jz5" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-REYRAN-0004</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp::</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0004</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0005</span>
+                        <strong class="text-dark" data-field="autor">Aleksandr Gromyko</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 7 meses</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Слили топливо ~ 500л. в ночь с 26 на 27 февраля 2026г. Стоянка освещенная но всё же.Парковался в ёлку место слева было свободное, слева и слили. Ничего не слышал, спал. Профессионально сработали , при утреннем обходе машины ничего не заметил, заметил только спустя время ,как уже немного проехал. Даже в крышке бака колпачок резиновый  на место вставили), не спешили). Всем удачи, на этой стоянке будьте предельно бдительны! </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">Nous vous remercions pour votre commentaire. Votre sécurité sur nos aires est une priorité c&apos;est pourquoi nous condamnons fermement ces agissements. Nos équipes travaillent en lien étroit avec les forces de l&rsquo;ordre pour y remédier. Nous vous invitons à les alerter en composant le 112. Nous espérons que vos futurs trajets se dérouleront sans désagrément.
+                        Solène, service client VINCI Autoroutes
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/XNWaCXiWUxJJD22HA" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0005</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0005</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0006</span>
+                        <strong class="text-dark" data-field="autor">Aleksey Godunov</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 año</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Сегодня ночью слили топливо ⛽️, больше 500 л с периода времени 00.00 до 3.00 ездила машина грузовая, номера не успел снять, так же они пытались слить в субботу ночью у меня.работают быстро , будьте осторожны &#9888;️ </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">Bonjour,
+                        Nous sommes sincèrement désolés pour ce vol de carburant dont vous avez été victime. Nous vous encourageons à signaler tout fait suspect aux forces de l&rsquo;ordre en composant le 112.
+                        En espérant que vos prochaines étapes sur notre réseau se déroulent sans difficulté.
+                        Solène, service client VINCI Autoroutes
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/e2Zzp4qTCHdAcXY2A" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0006</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/<span data-field="status-id">AUD-A8-REYRAN-0006</span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0007</span>
+                        <strong class="text-dark" data-field="autor">Mugur Topirceanu</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Romanian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 año</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Parcare in care se fura aproape in fiecare noapte, toalete mizere, nici macar nu sunt deschise toate, cele pentru femei sunt inchise toate desi sunt cateva echipaje sot/sotie. De vineri nu a venit nimeni sa faca mentenanta. E prima si ultima data cand ne oprim aici.&#128078;&#128078;&#128078; </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">Bonjour,
+                        Nous vous remercions d&apos;avoir pris le temps de partager votre expérience. Nous sommes désolés d&rsquo;apprendre que vous avez eu des désagréments. Nous avons transmis votre commentaire à l&apos;équipe en charge de cette aire. Il apparaît qu&rsquo;une coupure d&rsquo;électricité survenue durant le week-end a impacté plusieurs équipements, ce qui pourrait expliquer les dysfonctionnements signalés.
+                        Il est difficile de prévenir tous les actes de malveillance, mais nous vous encourageons à signaler immédiatement tout comportement suspect aux forces de l&apos;ordre en composant le 17.
+                        A bientôt, j&apos;espère, sur notre réseau
+                        Solène, service client VINCI Autoroutes
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/e2Zzp4qTCHdAcXY2A" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0007</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0007</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0008</span>
+                        <strong class="text-dark" data-field="autor">Andrey Ka</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 año</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">26.07.25 слили дизель,27.07.25 украли груз ,весь паркинг порезан,кто везёт что то дорогое мимо </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">Bonjour,
+                        Nous sommes sincèrement désolés d&apos;apprendre que vous avez été victime d&apos;un vol de carburant sur notre aire. Il est difficile de prévenir tous les actes de malveillance, mais nous vous encourageons à signaler immédiatement tout comportement suspect aux forces de l&apos;ordre en composant le 17 ou le 112.
+                        Nous espérons que vos futurs trajets se dérouleront sans désagrément.
+                        Solène, service client VINCI Autoroutes
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/6MkttF3kRH234pQ27" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0008</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0008</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0009</span>
+                        <strong class="text-dark" data-field="autor">Cristi Diaconu</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Romanian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 año</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Vive la France(sau Africa de Sud),vive la policia franceza care la control de camioane sunt primi dar la control de hoti sunt ultimi. Pe data de 04.04.2025 mi s-a furat in jur de 600l de motorina in parcare Aire du Reyran . Si am vazut foarte multe prelati taiate. Asa ca aveti grija pe unde parcati in aceasta jungla , occidentala&quot;. Drumuri bune la toata lumea. </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">Bonjour,
+                        Nous sommes sincèrement désolés d&apos;apprendre que vous avez été victime d&apos;un vol de carburant sur notre aire. Il est difficile de prévenir tous les actes de malveillance, mais nous vous encourageons à signaler immédiatement tout comportement suspect aux forces de l&apos;ordre en composant le 17 ou le 112.
+                        Nous espérons que vos futurs trajets se dérouleront sans désagrément.
+                        Solène, service client VINCI Autoroutes
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/qcHtg5bbbYhr4nif9" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0009</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0009</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0010</span>
+                        <a href="https://www.google.com/maps/contrib/109237047558373608178/reviews/@43.5008865,6.7570461,884m/data=!3m1!1e3!4m3!8m2!3m1!1e1?entry=ttu&amp;g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><strong class="text-dark" data-field="autor">Kolya BT</strong></a>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 8 meses</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Слили топливо.
+И бак и реф </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Nous vous remercions pour votre commentaire. Votre sécurité sur nos aires est une priorité c&apos;est pourquoi nous condamnons fermement ces agissements. Nos équipes travaillent en lien étroit avec les forces de l&rsquo;ordre pour y remédier. Nous vous invitons à les alerter en composant le 112. Nous espérons que vos futurs trajets se dérouleront sans désagrément.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/okhangFma8wJXgPm7" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0010</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0010</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0011</span>
+                        <strong class="text-dark" data-field="autor">Rodrigo Marques</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Portugues</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 3 meses</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Horrível, estava carregado de pedra deixei as portas do reboque abertas e mesmo assim cortaram me a lona a mim e a todos que lá dormimos horrível mesmo </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">Bonjour,
+                        Nous vous remercions pour votre signalement. Nous prenons très au sérieux les incidents pouvant affecter la sécurité de nos clients et collaborons activement avec les forces de l&rsquo;ordre pour assurer la tranquillité sur nos aires.
+                        Nous vous encourageons à signaler immédiatement tout comportement suspect aux forces de l&apos;ordre en composant le 112.Nous espérons vous offrir une meilleure expérience prochainement.
+                        Solène, service client VINCI Autoroutes
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/vucYMw8AcNJFRvd88" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0011</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0011</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0021</span>
+                        <strong class="text-dark" data-field="autor">Volodimir Rastiehaiev</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Ucranian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 año</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Паркінг гарний, але небезпечно сьогодні вночі в декількох водіїв було вкрадено паливо . </p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">Nous vous remercions de nous avoir partagé votre commentaire. En cas d&apos;acte malveillant, nous vous encourageons à signaler immédiatement tout comportement suspect aux forces de l&apos;ordre en composant le 17 ou le 112.
+                        Nous espérons que vos futurs trajets se dérouleront sans désagrément.
+                        Solène, service client VINCI Autoroutes
+                        <small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/rBxzKQCbLUttocZz5" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0021</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0021</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0024</span>
+                        <strong class="text-dark" data-field="autor">Andrey Gutor</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 2 semanas</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">В ночь с 4 на 5.10.2026 около 4часов ночи слили топливо.Слили не много,успел спугнуть.Синяя скания на румынских номерах (AG).Стоял возле туалета под фонарями,справа было свободное место,с правого бака и слили.</p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Nous vous remercions pour votre signalement. Nous prenons très au sérieux les incidents pouvant affecter la sécurité de nos clients et condamnons fermement ces agissements. Soyez assuré que nous collaborons activement avec les forces de l&rsquo;ordre pour assurer la sécurité sur nos aires.
+                        Nous vous encourageons à signaler immédiatement tout comportement suspect en composant le 112.
+                        A bientôt sur notre réseau.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/4JWznzmouBQC57kt7" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0024</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0024</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0025</span>
+                        <strong class="text-dark" data-field="autor">саша Грушевич</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 mes</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Слили топливо с машины, с прицепа не получилось. Будьте осторожны</p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Nous vous remercions pour votre signalement. Nous prenons très au sérieux les incidents pouvant affecter la sécurité de nos clients et condamnons fermement ces agissements. Soyez assuré que nous collaborons activement avec les forces de l&rsquo;ordre pour assurer la sécurité sur nos aires.
+                        Nous vous encourageons à signaler immédiatement tout comportement suspect en composant le 112.
+                        A bientôt sur notre réseau.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/BGhN8a7egW1FompF9" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0025</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0025</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0026</span>
+                        <strong class="text-dark" data-field="autor">Nico Fercam</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Spanish</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 año</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Hola !
+En Reyran se roba mucho el gazoil !!!
+Esta noche me robaron el gazoil ,pero todo !!!
+Una Scania blanca con remolque frigo Matricula Francia  !!!</p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Nous vous remercions pour votre signalement. Nous prenons très au sérieux les incidents pouvant affecter la sécurité de nos clients et collaborons activement avec les forces de l&rsquo;ordre pour assurer la tranquillité sur nos aires.
+                        Nous vous encourageons à signaler immédiatement tout comportement suspect aux forces de l&apos;ordre en composant le 112.Nous espérons vous offrir une meilleure expérience prochainement.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/rsMCDmfQ7wYKBYhg7" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0026</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0026</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0027</span>
+                        <strong class="text-dark" data-field="autor">Roxana Gabor</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Romanian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 año</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Condiții decente pentru șoferii de tir, duș cu apă caldă, toaleta, mașini de spălat, etc!La capitolul siguranță,nu e ok,am găsit ușile deschise la remorcă dimineața!!Deci grijă maximă!</p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Nous tenons tout d&apos;abord à nous excuser pour les désagréments rencontrés. Nous avons transmis votre commentaire à l&apos;équipe en charge de cette aire afin qu&apos;elle intervienne. Il apparaît qu&rsquo;une coupure d&rsquo;électricité survenue durant le week-end a impacté plusieurs équipements, ce qui pourrait expliquer les dysfonctionnements signalés.
+                        En cas d&apos;acte malveillant, nous vous encourageons à signaler tout fait suspect aux forces de l&rsquo;ordre en composant le 112.
+                        En espérant que vos prochaines étapes sur notre réseau se déroulent sans difficulté.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/URMXhdi7UcoXJckx7" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0027</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0027</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0028</span>
+                        <strong class="text-dark" data-field="autor">VASYL KALINICHENKO</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 2 meses</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">10.08.26 украли фонари на прицепе.
+Пускай светят очень хорошо.</p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Nous vous remercions pour votre signalement. Nous prenons très au sérieux les incidents pouvant affecter la sécurité de nos clients et collaborons activement avec les forces de l&rsquo;ordre pour assurer la tranquillité sur nos aires.
+                        Nous vous encourageons à signaler immédiatement tout comportement suspect aux forces de l&apos;ordre en composant le 112.Nous espérons vous offrir une meilleure expérience prochainement.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/YKsnyaJqnp3ws8ZG9" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0028</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0028</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0029</span>
+                        <strong class="text-dark" data-field="autor">
+Sergei Shekun</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 5 meses</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Туалет есть , но половина закрыто . Душ есть , две кабинки , но нормальная одна . Есть автомат с вкусняшками , автомат с пиццей , не работтает . ЕСТЬ СТИРАЛКИ , дороговато
+14.04.26 с 3 до 5 утра порезали тенты , из одной машины вытянули коробки . Лесник относительно нормальный, проблема с ночными хулиганами</p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Nous sommes désolés pour les désagréments rencontrés lors de votre passage.
+                        Notre prestataire est récemment intervenu pour vérifier le bon fonctionnement du distributeur de snacks et de la machine à pizza. Sachez qu&apos;un numéro d&rsquo;assistance est affiché sur place et vous met en relation directe avec le SAV afin de vous accompagner en cas d&apos;incident.
+                        Nous déplorons également les comportements inappropriés que vous avez pu observer et travaillons en étroite collaboration avec les autorités pour y remédier. Nous vous encourageons à signaler immédiatement tout comportement suspect aux forces de l&apos;ordre en composant le 112.
+                        Nous espérons vous offrir une meilleure expérience lors d&rsquo;un prochain arrêt.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/1v8YmeX8vPmnRVfX9" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0029</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0029</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0030</span>
+                        <strong class="text-dark" data-field="autor">
+Павел Дальнобойщик</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 7 meses</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Порезали тент , орудует банда черный юг, но через раз часто тут стою</p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Merci pour votre message. Votre sécurité est au cœur de nos priorités, et nous condamnons fermement ce type de comportement. Nos équipes restent mobilisées aux côtés des forces de l&rsquo;ordre pour garantir un environnement sûr. Nous leur avons donc transmis votre signalement. Nous vous encourageons à signaler vous aussi tout comportement suspect aux forces de l&apos;ordre en composant le 112.
+                        Nous espérons que vos prochains trajets se passeront dans les meilleures conditions.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/JPS6aQmzmLVK52A4A" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0030</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0030</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0031</span>
+                        <strong class="text-dark" data-field="autor"> 
+Юрий Кутявин</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 año</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Сегодня ночью отравили газом коллегу ,порезали тенты ! Опасно ! Туалеты закрыты ! Обьезжайте это место</p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Nous vous remercions d&apos;avoir pris le temps de nous faire part de votre expérience. Nous sommes désolés d&apos;apprendre que vous ayez trouvé nos sanitaires fermés. Votre remarque a été transmise à l&apos;équipe en charge de cette aire afin qu&apos;elle intervienne.
+                        Votre sécurité sur nos aires est une priorité c&apos;est pourquoi nous condamnons fermement ces agissements. Nos équipes travaillent en lien étroit avec les forces de l&rsquo;ordre pour y remédier. Nous vous invitons à les signaler en composant le 112.
+                        Nous vous remercions de nous avoir alertés et espérons vous accueillir à nouveau sur notre réseau.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/3ry92VB57L36ExuH6" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0031</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0031</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0032</span>
+                        <strong class="text-dark" data-field="autor">
+Юрий Кутявин</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 1 año</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">Сегодня ночью отравили газом коллегу ,порезали тенты ! Опасно ! Туалеты закрыты ! Обьезжайте это место</p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Nous vous remercions d&apos;avoir pris le temps de nous faire part de votre expérience. Nous sommes désolés d&apos;apprendre que vous ayez trouvé nos sanitaires fermés. Votre remarque a été transmise à l&apos;équipe en charge de cette aire afin qu&apos;elle intervienne.
+                        Votre sécurité sur nos aires est une priorité c&apos;est pourquoi nous condamnons fermement ces agissements. Nos équipes travaillent en lien étroit avec les forces de l&rsquo;ordre pour y remédier. Nous vous invitons à les signaler en composant le 112.
+                        Nous vous remercions de nous avoir alertés et espérons vous accueillir à nouveau sur notre réseau.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/3ry92VB57L36ExuH6" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0032</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0032</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article class="card mb-3 shadow-sm border-start border-4 border-primary" data-audit-id="AUD-A8-REYRAN-0001" data-po="1" data-highway="A8" data-location="Aire du Reyran Aire PL A8" data-spam-tag="RESPUESTA_TIPO_BOT">
+                <!-- Encabezado de la Tarjeta -->
+                <div class="card-header bg-light d-flex justify-content-between align-items-center py-2">
+                    <div>
+                        <span class="badge bg-primary me-2">AUD-A8-REYRAN-0033</span>
+                        <strong class="text-dark" data-field="autor">
+Олег Фоменко</strong>
+                        <span class="badge bg-secondary ms-2" data-field="idioma">Russian</span>
+                    </div>
+                    <small class="text-muted" data-field="antiguedad">Hace 11 meses</small>
+                </div>
+                <!-- Cuerpos de Texto: Reseña y Respuesta -->
+                <div class="card-body">
+                    <!-- Texto de la Reseña -->
+                    <p class="2px bg-white border border-bottom border-dark border-end border-start border-top card-text p-3 rounded text-dark" data-field="texto-resena" style="border-width: 3px; border-color: #000000; background-clip: border-box;">У колеги рядом стояли порізали тент украли товар</p>
+                    <!-- Bloque de Respuesta Oficial / Spam -->
+                    <div class="bg-light border border-1 border-dark border-start card-text mt-2 p-3 rounded" data-field="texto-respuesta">
+                        Bonjour,
+                        Nous vous remercions pour votre signalement. Nous prenons très au sérieux les incidents pouvant affecter la sécurité de nos clients et condamnons fermement ces agissements. Soyez assuré que nous collaborons activement avec les forces de l&rsquo;ordre pour assurer la sécurité sur nos aires.
+                        Nous vous encourageons à signaler immédiatement tout comportement suspect en composant le 112.
+                        A bientôt sur notre réseau.
+                        Solène, service client VINCI Autoroutes<small class="fw-bold text-uppercase d-block text-muted mb-1"></small>
+                        <span> </span>
+                    </div>
+                    <!-- Etiqueta de Clasificación / Spam -->
+                    <div class="mt-2">
+                        <span class="badge bg-warning text-dark">Patrón: Respuesta Genérica / Robo Gasoil</span>
+                    </div>
+                    <!-- Enlaces a Fuente Original -->
+                    <div class="mt-3">
+                        <a rel="noopener noreferrer" title="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" aria-label="View original Google Maps review regarding heavy goods vehicle safety at Aire du Reyran A8" data-field="url-resena" href="https://maps.app.goo.gl/s7C5V3uMSgTsC9dN6" target="_blank" class="btn btn-sm btn-outline-primary" data-field="url-resena">
+                Google Maps Review: Truck Safety & Security - Aire du Reyran A8 (AUD-A8-REYRAN-0001) </a>
+                    </div>
+                </div>
+                <!-- Metadatos Forenses y Cadena de Custodia -->
+                <div class="card-footer bg-dark text-light font-monospace small py-2" data-field="forensic-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <strong>Status ID:</strong> <span data-field="status-id">AUD-A8-REYRAN-0033</span>
+                            </div>
+                            <div>
+                                <strong>UTC Timestamp:</strong> <span data-field="utc-timestamp">2026-10-25T11:52:00Z</span>
+                            </div>
+                            <div>
+                                <strong>Evidence Folder:</strong> <span data-field="folder">./AUD_A8_REYRAN/AUD-A8-REYRAN-0033</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <strong>PNG SHA-256:</strong> <span data-field="hash-png" class="text-truncate d-block">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                            <div>
+                                <strong>TXT SHA-256:</strong> <span data-field="hash-txt" class="text-truncate d-block">f4ca2e3298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
