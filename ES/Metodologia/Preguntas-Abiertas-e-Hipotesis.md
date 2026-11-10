@@ -29,7 +29,7 @@ Indicadores verificables:
 
 - Presencia visible de patrullas.
 - Número de referencias a vigilancia en documentación pública.
-- Respuestas públicas documentadas de las concesionarias a incidentes comunicados por usuarios (sin que consten, en el corpus actual, tiempos medios de respuesta cuantificados).
+- Respuestas públicas documentadas de las concesionarias a incidentes comunicados por usuarios (sin que consten, en el conjunto actual, tiempos medios de respuesta cuantificados).
 - Protocolos de cooperación entre concesionarias y fuerzas de seguridad.
 - Estadísticas oficiales disponibles.
 
@@ -123,6 +123,6 @@ Su finalidad es identificar posibles factores explicativos susceptibles de ser i
 
 ---
 
-> **Vinculación con el corpus documental**  
-> Estas hipótesis se contrastarán prioritariamente con las siguientes fuentes documentales: el corpus de reseñas clasificadas A/B, las respuestas públicas de las concesionarias, el contrato de concesión y la documentación normativa accesible, y las comunicaciones institucionales.  
+> **Vinculación con el conjunto documental**  
+> Estas hipótesis se contrastarán prioritariamente con las siguientes fuentes documentales: el conjunto de reseñas clasificadas A/B, las respuestas públicas de las concesionarias, el contrato de concesión y la documentación normativa accesible, y las comunicaciones institucionales.  
 > Consultar la carpeta [Datos](../Datos/).
