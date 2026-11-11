@@ -7427,7 +7427,7 @@ textarea.form-control-lg {
 
 .border-primary {
   --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity)) !important;
+  border-color: rgb(200 211 225) !important;
 }
 
 .border-secondary {
@@ -7520,7 +7520,7 @@ textarea.form-control-lg {
 }
 
 .border-4 {
-  border-width: 4px !important;
+  border-width: 2px !important;
 }
 
 .border-5 {
