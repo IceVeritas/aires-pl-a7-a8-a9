@@ -12,9 +12,9 @@
     </head>
     <body class="bg-opacity-25 bg-white">
         <!-- HERO / HEADER PRINCIPAL -->
-        <header class="hero-header py-5 mb-5 border-bottom border-primary border-4">
+        <header class="hero-header py-4 mb-5 border-bottom border-primary border-4">
             <div class="container">
-                <!-- Selector de Idioma Horizontal -->
+                <!-- Selector de idioma -->
                 <nav class="lang-selector-bar mb-3" aria-label="Selector de idioma">
                     <a href="BG/" class="lang-btn active" title="Български"> <span class="lang-name font-monospace fw-bold">BG</span> </a>
                     <span class="lang-divider text-white-50 mx-1">|</span>
@@ -22,13 +22,47 @@
                     <span class="lang-divider text-white-50 mx-1">|</span>
                     <a href="RU/" class="lang-btn" title="Русский"> <span class="lang-name font-monospace text-white-50">RU</span> </a>
                 </nav>
+                <!-- Identidad del proyecto -->
                 <div class="row align-items-center">
-                    <div class="col-lg-10">
-                        <a href="https://icedux.art"><span class="badge bg-primary mb-3 px-2 py-2 rounded-0 text-uppercase">IceVeritas Research Portal</span></a>
-                        <h1 class="display-6 mb-2 text-uppercase">НЕЗАВИСИМО ОБСЛЕДВАНЕ, ДОКУМЕНТИРАНЕ И АНАЛИЗ НА СИГУРНОСТТА ВЪВ ФРАНЦИЯ</h1>
-                        <p class="lead text-light mb-0 text-uppercase">Средиземноморски коридор (A9 &middot; A7 &middot; A8) &#8212; OSINT анализ, правни гаранции и институционален одит</p>
+                    <div class="col-12">
+                        <a href="https://icedux.art"> <span class="badge bg-primary mb-3 px-2 py-2 rounded-0 text-uppercase">
+                        IceVeritas Research Portal </span> </a>
+                        <h1 class="display-6 mb-2 text-uppercase">
+                    НЕЗАВИСИМО ОБСЛЕДВАНЕ, ДОКУМЕНТИРАНЕ И АНАЛИЗ НА СИГУРНОСТТА ВЪВ ФРАНЦИЯ </h1>
+                        <p class="lead text-light mb-3 text-uppercase">
+                    Средиземноморски коридор (A9 &middot; A7 &middot; A8)
+                    &#8212; OSINT анализ, правни гаранции и институционален одит </p>
                     </div>
                 </div>
+                <!-- Responsive navigation -->
+                <nav class="navbar navbar-expand-lg navbar-dark p-0" aria-label="Основна навигация">
+                    <!-- Botón hamburguesa para móviles -->
+                    <button class="navbar-toggler rounded-0 border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Отвори менюто">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="ms-2 small">МЕНЮ</span>
+                    </button>
+                    <!-- Elementos del menú -->
+                    <div class="collapse navbar-collapse" id="mainNavigation">
+                        <ul class="navbar-nav gap-lg-3 mt-3 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home" title="Начална страница на проекта IceVeritas">
+                            Начало </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#research" title="Изследователска дейност и анализи">
+                            Изследване </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/IceVeritas/IceVeritas-Data-TIR-FR/tree/main/BG" title="Публично хранилище с документирани данни и материали по проекта IceVeritas">
+                            Хранилище с данни </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#documentation" title="Документация, методология и правни материали">
+                            Документация </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </header>
         <main class="bg-white container mb-5 shadow">
@@ -133,8 +167,7 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h5 class="card-title">Хранилище с публични данни</h5>
-                    <p class="card-text">Структурирани публично достъпни данни, използвани за анализа, документирането и проследяването на инциденти и рискове за сигурността на професионалните водачи по средиземноморския транспортен коридор (A7, A8 и A9 във Франция).
-</p>
+                    <p class="card-text">Структурирани публично достъпни данни, използвани за анализа, документирането и проследяването на инциденти и рискове за сигурността на професионалните водачи по средиземноморския транспортен коридор (A7, A8 и A9 във Франция).</p>
                     <br>
                     <p class="small">Публичното хранилище на проекта е достъпно в GitHub: IceVeritas-Data-TIR-FR</p>
                     <a href="https://github.com/IceVeritas/IceVeritas-Data-TIR-FR/tree/main/BG" class="btn btn-success">
